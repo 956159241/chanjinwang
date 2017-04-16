@@ -1,0 +1,128 @@
+/*body, div, ul, ol, h1, h2 {*/
+	/*margin: 0;*/
+	/*padding: 0*/
+/*}*/
+img {
+	border: 0
+}
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+a {
+	margin: 0;
+	outline: none;
+	padding: 0;
+	text-decoration: none
+}
+/*
++----------------------------------------------------------------+
+	Extras
++----------------------------------------------------------------+
+*/
+
+.cf:before, .cf:after {
+	content: " ";
+	display: table
+}
+.cf:after {
+	clear: both
+}
+.clear {
+	clear: both
+}
+/*
++----------------------------------------------------------------+
+	Definicoes Gerais
++----------------------------------------------------------------+
+*/
+
+/*body {*/
+	/*background-color: #2D2C30;*/
+	/*color: #eaeaea;*/
+	/*font: 62.5% Verdana, Geneva, sans-serif*/
+/*}*/
+/*h1 {*/
+	/*font: 3.8em 'OratorpraOi-TextTwo';*/
+	/*text-align: center;*/
+	/*margin-top: 150px;*/
+	/*margin-right: 0;*/
+	/*margin-bottom: 50px;*/
+	/*margin-left: 0;*/
+/*}*/
+/*
++----------------------------------------------------------------+
+	Slideshow
++----------------------------------------------------------------+
+*/
+
+.slider {
+	margin: 0 auto;
+	width:430px;
+  /*width:100% !important;*/
+}
+.slider-container {
+	/*height: 575px;*/
+  height:468px;
+	/*margin: 0 auto 20px;*/
+  margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+	/*width:500px;*/
+  width:100% !important;
+  /*z-index:-1;*/
+}
+.slider-container .slider-wrapper {
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 5000em; /*Fix for prevent display errors*/
+	-webkit-transition: all 800ms ease;
+	-moz-transition: all 800ms ease;
+	-o-transition: all 800ms ease;
+	transition: all 800ms ease;
+}
+.slider-container .slide {
+	float: left;
+	/*height: 575px;*/
+  height:468px;
+	overflow: hidden;
+	position: relative;
+	width:430px;
+}
+.slider-nav {
+	text-align: center;
+	width:100%;
+  margin-top: -100px;
+  z-index: 10000;
+}
+.slider-nav li {
+	display: inline;
+	padding: 8px;
+  z-index: 10000;
+}
+.slider-nav .bullet {
+	background-color: #59baa8;
+	border-radius: 50%;
+	display: inline-block;
+	text-indent: -9000px;
+	overflow: hidden;
+	height: 10px;
+	width: 10px;
+}
+.slider-nav .active {
+	background-color: #e7433b
+}
+.slider-nav .prev, .slider-nav .next {
+	/*background: url('../../static/img/sprite.png') no-repeat;*/
+	display: inline-block;
+	text-indent: -9000px;
+	overflow: hidden;
+	/*height: 16px;*/
+	/*width: 16px;*/
+}
+.slider-nav .next {
+	background-position: -15px top
+}
